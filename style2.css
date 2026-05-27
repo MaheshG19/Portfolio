@@ -1,0 +1,228 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background: #0b1120;
+    color:#f1f5f9;
+    overflow-x:hidden;
+}
+
+/* Navbar */
+.navbar{
+    background: rgba(15,23,42,0.9) !important;
+    backdrop-filter: blur(10px);
+    border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+.navbar-brand{
+    font-size:1.4rem;
+    letter-spacing:1px;
+}
+
+/* Hero Section */
+.hero-section{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+
+    background:
+    radial-gradient(circle at top left, rgba(56,189,248,0.15), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(59,130,246,0.15), transparent 30%),
+    linear-gradient(135deg,#020617,#0f172a,#111827);
+
+    position:relative;
+}
+
+.hero-section h1{
+    font-size:4rem;
+    font-weight:700;
+    margin-bottom:15px;
+    color:white;
+}
+
+.hero-section .lead{
+    font-size:1.2rem;
+    color:#cbd5e1;
+}
+
+/* Sections */
+section,
+section2{
+    padding:90px 0;
+}
+
+/* Headings */
+h2{
+    font-weight:700;
+    margin-bottom:10px;
+    color:white;
+}
+
+/* Professional HR */
+hr{
+    width:80px;
+    height:4px;
+    background:linear-gradient(to right,#38bdf8,#2563eb);
+    border:none;
+    opacity:1;
+    margin:auto;
+    border-radius:20px;
+}
+
+/* Cards */
+.skill-card,
+.education-card{
+    background: rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+
+    border-radius:20px;
+    transition:0.4s ease;
+    color:white;
+}
+
+/* Hover Effects */
+.skill-card:hover,
+.education-card:hover{
+    transform:translateY(-10px);
+    box-shadow:
+    0 10px 30px rgba(37,99,235,0.25),
+    0 0 20px rgba(56,189,248,0.15);
+}
+
+/* Card Text */
+.card p,
+.card small,
+.card h5{
+    color:#e2e8f0;
+}
+
+/* Buttons */
+.btn{
+    border-radius:12px;
+    padding:10px 20px;
+    font-weight:500;
+    transition:0.3s ease;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+/* About Text */
+.text-muted{
+    color:#94a3b8 !important;
+    font-size:1.05rem;
+    line-height:1.8;
+}
+
+/* Badge Styling */
+.badge{
+    padding:8px 14px;
+    border-radius:10px;
+    font-size:0.8rem;
+}
+
+/* Skills Icons */
+.skill-card i{
+    margin-bottom:15px;
+}
+
+/* Contact Section */
+.bg-light{
+    background:#111827 !important;
+}
+
+/* Footer */
+footer{
+    background:#020617 !important;
+    border-top:1px solid rgba(255,255,255,0.08);
+}
+
+footer p{
+    margin:0;
+    color:#94a3b8;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#0f172a;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#2563eb;
+    border-radius:20px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+    .hero-section h1{
+        font-size:2.5rem;
+    }
+
+    .hero-section .lead{
+        font-size:1rem;
+    }
+
+    .skill-card,
+    .education-card{
+        margin-bottom:20px;
+    }
+}
+/* Custom Gradient Badges */
+
+.custom-badge{
+    padding:8px 14px;
+    border-radius:30px;
+    font-size:0.8rem;
+    font-weight:600;
+    color:white;
+    display:inline-block;
+    margin-top:10px;
+    letter-spacing:0.5px;
+}
+
+/* Different Badge Themes */
+
+.badge-blue{
+    background:linear-gradient(135deg,#3b82f6,#1d4ed8);
+}
+
+.badge-purple{
+    background:linear-gradient(135deg,#a855f7,#6d28d9);
+}
+
+.badge-green{
+    background:linear-gradient(135deg,#10b981,#047857);
+}
+
+.badge-orange{
+    background:linear-gradient(135deg,#f97316,#c2410c);
+}
+
+.badge-red{
+    background:linear-gradient(135deg,#ef4444,#b91c1c);
+}
+
+.badge-cyan{
+    background:linear-gradient(135deg,#06b6d4,#0e7490);
+}
+
